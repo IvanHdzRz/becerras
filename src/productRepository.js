@@ -22,6 +22,13 @@ const getProductById=async(productId)=>{
     const data = await res.json();
     return data;
 }
+const getAllProducts=async()=>{
+    const {apiUrl,apiPort} = enviroment.domain
+    const {products} = enviroment.apiEndPoints
+    const res = await fetch(`${apiUrl}:${apiPort}/${products}`)
+    const data = await res.json();
+    return data;
+}
 
 const editProduct=async(product)=>{
     const {apiUrl,apiPort} = enviroment.domain
@@ -56,3 +63,4 @@ module.exports.saveProduct = saveProduct;
 module.exports.getProductById = getProductById;
 module.exports.editProduct = editProduct;
 module.exports.deleteProduct = deleteProduct;
+module.exports.getAllProducts= getAllProducts;

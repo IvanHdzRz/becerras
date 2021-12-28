@@ -45,7 +45,7 @@ deleteButton.addEventListener('click',async()=>{
     try{
         console.log('...borrando')
         await productRepository.deleteProduct(id);
-        window.location="/"
+        window.location="/products.html"
         console.log('borrado')
     }catch(e){
         console.log(e)
