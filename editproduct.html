@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="loaderSpinner">Cargando...</div>
+        <form class="formEditProduct" id="formEditProduct">
+            <h1 id="productTitle">Editar  producto: </h1>
+            <label for="productName">Nombre</label>
+            <input type="text" id="productName" />
+            <label for="productSKU">SKU</label>
+            <input type="text" id="productSKU" />
+            <label for="productDescription">Descripcion</label>
+            <textarea id="productDescription" rows="5" cols="50" ></textarea>
+            <label for="productPrice">Price</label>
+            <input id="productPrice" type="number" min="0.1" />
+            <button id="saveProduct">Guardar</button>
+            <button id="deleteProduct">Borrar</button>
+        </form>
+        
+    </main>
+    <script src="dist/editProduct.js"></script>
+</body>
+</html>
